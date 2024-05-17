@@ -1,0 +1,49 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.clock-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.clock {
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span {
+    padding: 0 8px;
+    display: inline-block;
+    min-width: 50px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .clock-container {
+        padding: 20px 40px;
+    }
+
+    .clock {
+        font-size: 36px;
+    }
+
+    .clock span {
+        min-width: 40px;
+    }
+}
